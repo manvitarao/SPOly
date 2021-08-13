@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="jsscript.js"></script>
+    <title>SFOly</title>
+     <style>
+    .form-box{
+        height: 570px; left: 30px;border: none;right: 30px;position: absolute;margin: 30px;
+        background: #fff;padding: 5px;border-radius: 50px;overflow: hidden;
+    }
+    h3,h5,p{
+        height: 2px;
+        font-size: 15px
+    }
+    .align {
+        width: 40%; text-align: center;font-size:18px;
+        border-radius: 50px; color: rgb(0, 0, 0); outline: none;
+    }
+    </style> 
+    <title>SFOly</title>
+</head>
+<body style="text-indent: 1em;background-color:#7a0505;">
+    <div class="form-box">
+     <div id="invoice">
+        <div class="title">
+            <center><h3><p>WELCOME TO SPRINGFIELD OLYMPIADS</p></h3></center>
+        </div>
+        <center><h5><p>PDF GENERATOR</p></h5></center><br><br>
+        <center><form style="left: 32%;position: absolute;top: 48px;transform: translate(-50%,-50);">
+            <h2>
+            <label for="name">My Name is:</label>
+            <input type="text" name="name" class="align"></h2></form></center>
+        </div>
+    </div><br>
+    <center><button onclick="pdf()" 
+        style="position: absolute;top: 25%;left: 50%;transform: translate(-50%,-50%);" >
+         Download </button></center>
+</body>
+</html>

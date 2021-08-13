@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <style>
+    *{
+	margin: 0; padding: 0;font-family: Century Gothic;
+    }
+    header{
+        background-color: crimson;
+    }
+    img{
+        padding-top: 60px;padding-right: 250px;
+    }
+    .title{
+	    position: absolute; top: 20%; left: 50%; transform: translate(-50%,-50%);
+    }
+    .title h1{
+	    color: rgb(0, 0, 0); font-size: 30px;
+    }
+    .row {
+        position:absolute;left: 60px;color: rgb(0, 0, 0);position:absolute;top: 180px;
+    }
+    .para::after{
+        content: '';width: 10px;height: 100%;background: crimson;position: absolute;left: -30px;top: 2% ;
+    }
+    .button{
+	    position: absolute; top: 60%; left: 11%; transform: translate(-50%,-50%);
+    }
+    .btn{
+	    border: 3px solid black;border-radius: 10px;padding: 10px 10px; color: rgb(0, 0, 0); text-decoration: none; 
+        transition: 0.6s ease;
+    }
+    .btn:hover{
+        background-color: crimson; color: #000;
+    }
+    ul{
+        float: left;list-style-type: none;margin-top: 25px;padding-left: 30px;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        text-decoration: none;color: rgb(255, 255, 255);padding: 2px 20px;border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+    ul li a:hover{
+        background-color:rgba(220, 20, 60, 0.637);color: #000000;
+    }
+    ul li.active a{
+	    background-color: rgba(220, 20, 60, 0.637);color: #000000;
+    }
+    .main{
+	    max-width: 1500px;margin: auto;
+    }
+    .box {
+        margin: auto;position: relative;top: 20px; ;left: 500px; ;width: 300px; height: 42px;
+        border: 2px solid rgb(255, 255, 255);transition: 0.6s ease; padding: 0px 10px; 
+        border-radius: 50px;background-color: white;
+    }
+    .container {
+        vertical-align: center;width: 100%;height: 100%;
+    }
+    .search {
+        width: 100%;height: 100%;border: none;padding: 0px 5px; border-radius: 50px; font-size: 18px;
+        font-weight: 500; color: rgb(0, 0, 0); 
+    }
+    .search:focus {
+        outline: none;
+    }
+    .material-icons {
+        font-size: 26;color: #000000;
+    }
+</style>
+</head>
+<body>
+    <header>
+    <div class="main">
+        <ul><h4>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <div class="box"><table class="container">
+        <tr><td><input type="text" placeholder="Search" class="search"></td>
+        <td><a href="#"><i class="material-icons">search</i></a></td></tr>
+    </table></div><br><br>
+    </header><hr>
+    <img align="right" src="sfoly.jpg" width="180" height="180" >
+    <div class="title">
+        <h1> SPRINGFIELD OLYMPAIDS </h1>
+    </div>
+    <div class="row">
+        <div class="para"></div>
+        <h2>At Springfield Olympiads,</h2><h4>We provide the best olympiad solutions for school students.</h4>
+            <h4>We expose students to the best competitive platforms in subjects<br>Like science, mathematics, and mental ability nationwide.<br>
+            <p>We work both in urban as well as rural areas,<br> To make sure that everyone gets exposure to the progressive and competitive world.</p>
+            <h3>(Click on PDF GENERATOR button below)</h3>
+        </div>
+    </div>
+    <div class="button"><h4>
+        <a href="index.html" class="btn">PDF GENERATOR</a>
+    
+</body> 
+</html>
